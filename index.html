@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мебели и подове, дървесина масив / MP-DM VANGELI-S</title>
+<style>
+/* Inline CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('gora.jpg'); /* Background image for the header */
+    background-size: cover;
+    background-position: center;
+
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background-image: url(pod3.jpg);
+    background-size: cover;
+    
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product {
+    background-color: #b1a9a2dc; /* Light brown */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.product img {
+    max-width: 28%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer; /* Change cursor to pointer when hovering over the image */
+    transition: transform 0.3s ease; /* Smooth transition when scaling the image */
+}
+
+.product img:hover {
+    transform: scale(1.1); /* Scale the image to 110% of its original size on hover */
+}
+
+.product h2 {
+    margin-top: 0;
+    color: #4c2f1a; /* Dark brown */
+}
+
+.footer {
+    background-color: #4c2f1a; /* Dark brown */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+    <h1>Дървесина масив</h1>
+    <p>За повече информация при интерес на тел 0876676797. Материала се намира в с.Ягодово на 5 км от Пловдив</p>
+</header>
+
+<div class="container">
+
+    <div class="product">
+        <h2>Яновe</h2>
+        <img class="qnove" src="qnove.jpg" alt="qnove">
+        <p>Пропарен БУК влажност 8 - 10%  Дължина 2600мм Дебелина 50 мм </p>
+        <p>Възможност за избор на янове различни от тези на снимките.</p>
+    </div>
+
+    <div class="product">
+        <h2>Дъб Масив </h2>
+        <img src="dub.jpg" alt="buk">
+        <p>Дъб на дебелина 40 и 50 мм дължина 2500мм Сух на 8-10% влажност.</p>
+        <p></p>
+    </div>
+
+    <div class="product">
+        <h2>Бук Масив</h2>
+        <img src="buk.jpg" alt="Pine Shelves">
+        <p>Бук с дебелина 50 мм влажност 8-10% дължина 2600 мм</p>
+        <p></p>
+    </div>
+
+</div>
+<footer class="footer">
+    <p> За повече инфорамация звъннете на горе дадения телефон. <br> Или ме потърсете на линка отдолу</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com/valentinsim"><img src="facebook.png" alt="Facebook"></a>
+    
+    </div>
+  </footer>
+<script>
+    // JavaScript to toggle image size on click
+    const productImages = document.querySelectorAll('.product img');
+    productImages.forEach(img => {
+        img.addEventListener('click', function() {
+            if (this.classList.contains('enlarged')) {
+                this.classList.remove('enlarged');
+            } else {
+                this.classList.add('enlarged');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
